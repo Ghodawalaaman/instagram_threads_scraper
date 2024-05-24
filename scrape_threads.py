@@ -97,5 +97,6 @@ if __name__ == "__main__":
             writer.writerow([data['thread']['code'], "", data['thread']['like_count'], data['thread']['username'], data['thread']['text'], time.time()])
             for r in data['replies']:
                 writer.writerow([r['code'], parent_thread_code, r['like_count'], r['username'], r['text'], time.time()])
+        time.sleep(random.randint(1,5))
 
 
